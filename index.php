@@ -23,7 +23,7 @@
 
         // Fetch and display rows
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            echo "ID: " . $row['id'] . " - Name: " . $row['display_name'] . "<br>";
+            echo "ID: " . $row['id'] . " - Name: " . $row['display_name'] . ' 18' . "<br>";
         }
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
